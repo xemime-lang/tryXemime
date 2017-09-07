@@ -8,6 +8,9 @@
 <link href="./favicon.ico" rel="icon" type="image/x-icon">
 <title>tryXemime</title>
 <style>
+body {
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Hiragino Kaku Gothic ProN,"メイリオ",meiryo,sans-serif;
+}
 @media (min-width:751px) {
 	body {
 		margin: 0;
@@ -20,7 +23,7 @@
 		width: 40vw;
 		height: 80vh;
 		background-color: #FAFAFA;
-		font-family: "Source Code Pro", sans-serif;
+		font-family: "Source Code Pro";
 	}
 	#output {
 		position: absolute;
@@ -30,7 +33,7 @@
 		height: 80vh;
 		background-color: #444444;
 		color: white;
-		font-family: "Source Code Pro", sans-serif;
+		font-family: "Source Code Pro";
 	}
 
 	#submit {
@@ -54,7 +57,7 @@
 		width: 90vw;
 		height: 18em;
 		background-color: #FAFAFA;
-		font-family: "Source Code Pro", sans-serif;
+		font-family: "Source Code Pro";
 		resize: none;
 	}
 	#output {
