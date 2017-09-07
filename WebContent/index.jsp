@@ -7,37 +7,75 @@
 <link href="./favicon.ico" rel="icon" type="image/x-icon">
 <title>tryXemime</title>
 <style>
-body {
-	margin: 0;
-	padding: 0;
-}
-#source {
-	position: absolute;
-	top: 10vh;
-	left: 5vw;
-	width: 40vw;
-	height: 80vh;
-	background-color: #FAFAFA;
-	font-family: "Source Code Pro", sans-serif;
-}
-#output {
-	position: absolute;
-	top: 10vh;
-	right: 5vw;
-	width: 40vw;
-	height: 80vh;
-	background-color: #444444;
-	color: white;
-	font-family: "Source Code Pro", sans-serif;
-}
+@media (min-width:751px) {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	#source {
+		position: absolute;
+		top: 10vh;
+		left: 5vw;
+		width: 40vw;
+		height: 80vh;
+		background-color: #FAFAFA;
+		font-family: "Source Code Pro", sans-serif;
+	}
+	#output {
+		position: absolute;
+		top: 10vh;
+		right: 5vw;
+		width: 40vw;
+		height: 80vh;
+		background-color: #444444;
+		color: white;
+		font-family: "Source Code Pro", sans-serif;
+	}
 
-#submit {
-	margin: auto;
-	width: 200px;
-	text-align: center;
-	background-color: #772F6D;
-	color: white;
-	cursor: pointer;
+	#submit {
+		margin: auto;
+		width: 200px;
+		text-align: center;
+		background-color: #772F6D;
+		color: white;
+		cursor: pointer;
+	}
+}
+@media (max-width:750px) {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	#source {
+		position: absolute;
+		top: 2em;
+		left: 4vw;
+		width: 90vw;
+		height: 18em;
+		background-color: #FAFAFA;
+		font-family: "Source Code Pro", sans-serif;
+		resize: none;
+	}
+	#output {
+		position: absolute;
+		top: 21em;
+		left: 4vw;
+		width: 90vw;
+		height: 18em;
+		background-color: #444444;
+		color: white;
+	}
+	#submit {
+		position: absolute;
+		top: 0;
+		left: 25vw;
+		width: 50vw;
+		height: 2em;
+		background-color: #772F60;
+		text-align: center;
+		color: white;
+		cursor: pointer;
+	}
 }
 </style>
 </head>
