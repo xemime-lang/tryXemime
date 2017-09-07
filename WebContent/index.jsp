@@ -4,6 +4,7 @@
 <html lang='ja'>
 <head>
 <meta charset='utf-8'>
+<link href="./favicon.ico" rel="icon" type="image/x-icon">
 <title>tryXemime</title>
 <style>
 body {
@@ -16,7 +17,7 @@ body {
 	left: 5vw;
 	width: 40vw;
 	height: 80vh;
-	background: #FAFAFA;
+	background-color: #FAFAFA;
 	font-family: "Source Code Pro", sans-serif;
 }
 #output {
@@ -25,9 +26,18 @@ body {
 	right: 5vw;
 	width: 40vw;
 	height: 80vh;
-	background: #444444;
+	background-color: #444444;
 	color: white;
 	font-family: "Source Code Pro", sans-serif;
+}
+
+#submit {
+	margin: auto;
+	width: 200px;
+	text-align: center;
+	background-color: #772F6D;
+	color: white;
+	cursor: pointer;
 }
 </style>
 </head>
@@ -56,10 +66,10 @@ if (request.getMethod() == "POST") {
 
 <form id="form" action="./" method="POST">
 	<textarea id="source" name="source" spellcheck="false"></textarea>
-	<button id="submit">実行</button>
+	<div id="submit">実行</div>
 </form>
 
-<textarea id="output"><%= output %></textarea>
+<textarea id="output" readonly spellcheck="false"><%= output %></textarea>
 
 <script>
 var source = document.getElementById("source");
