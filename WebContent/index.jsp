@@ -52,7 +52,7 @@ body {
 	}
 	#source {
 		position: absolute;
-		top: 2em;
+		top: 3em;
 		left: 4vw;
 		width: 90vw;
 		height: 18em;
@@ -62,7 +62,7 @@ body {
 	}
 	#output {
 		position: absolute;
-		top: 21em;
+		top: 22em;
 		left: 4vw;
 		width: 90vw;
 		height: 18em;
@@ -98,7 +98,7 @@ if (request.getMethod() == "POST") {
 	ByteArrayOutputStream stream = new ByteArrayOutputStream();
 	System.setOut(new PrintStream(stream));
 	try {
-		Main.exec(request.getParameter("source"));
+		Main.exec(request.getParameter("source") + "\n");
 	} catch(Exception e) {
 		System.out.println(e.getMessage());
 	}
